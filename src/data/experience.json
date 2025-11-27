@@ -1,0 +1,29 @@
+{
+  "experiences": [
+    {
+      "id": 1,
+      "company": "Empresa Tech",
+      "position": "Desenvolvedor Full Stack",
+      "period": "2023 - Presente",
+      "description": "Desenvolvimento de aplicações web modernas utilizando React e Node.js. Trabalho em equipe ágil com foco em qualidade e performance.",
+      "technologies": ["React", "Node.js", "TypeScript", "AWS"]
+    },
+    {
+      "id": 2,
+      "company": "Startup Inovadora",
+      "position": "Desenvolvedor Frontend",
+      "period": "2021 - 2023",
+      "description": "Criação de interfaces responsivas e interativas. Implementação de design systems e otimização de performance.",
+      "technologies": ["React", "Vue.js", "Tailwind CSS", "Figma"]
+    },
+    {
+      "id": 3,
+      "company": "Agência Digital",
+      "position": "Desenvolvedor Júnior",
+      "period": "2020 - 2021",
+      "description": "Desenvolvimento de sites institucionais e landing pages. Aprendizado de boas práticas e metodologias ágeis.",
+      "technologies": ["HTML", "CSS", "JavaScript", "WordPress"]
+    }
+  ]
+}
+

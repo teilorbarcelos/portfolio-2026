@@ -1,0 +1,19 @@
+{
+  "education": [
+    {
+      "id": 1,
+      "institution": "Universidade Tecnológica",
+      "degree": "Bacharelado em Ciência da Computação",
+      "period": "2016 - 2020",
+      "description": "Formação completa em programação, algoritmos, estruturas de dados e engenharia de software."
+    },
+    {
+      "id": 2,
+      "institution": "Plataforma Online",
+      "degree": "Certificação em Desenvolvimento Web Full Stack",
+      "period": "2021",
+      "description": "Curso intensivo focado em tecnologias modernas de desenvolvimento web."
+    }
+  ]
+}
+

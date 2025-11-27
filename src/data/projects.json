@@ -1,0 +1,45 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Projeto E-commerce",
+      "description": "Plataforma completa de e-commerce com sistema de pagamento integrado, carrinho de compras e painel administrativo.",
+      "image": "/projects/ecommerce.jpg",
+      "technologies": ["React", "TypeScript", "Node.js", "PostgreSQL", "Stripe"],
+      "github": "https://github.com/seu-usuario/ecommerce",
+      "demo": "https://ecommerce-demo.com",
+      "category": "Web App"
+    },
+    {
+      "id": 2,
+      "title": "Dashboard Analytics",
+      "description": "Dashboard interativo para análise de dados com gráficos em tempo real e exportação de relatórios.",
+      "image": "/projects/dashboard.jpg",
+      "technologies": ["React", "TypeScript", "Chart.js", "Tailwind CSS"],
+      "github": "https://github.com/seu-usuario/dashboard",
+      "demo": "https://dashboard-demo.com",
+      "category": "Web App"
+    },
+    {
+      "id": 3,
+      "title": "App Mobile de Tarefas",
+      "description": "Aplicativo mobile para gerenciamento de tarefas com sincronização em nuvem e notificações push.",
+      "image": "/projects/todoapp.jpg",
+      "technologies": ["React Native", "TypeScript", "Firebase"],
+      "github": "https://github.com/seu-usuario/todoapp",
+      "demo": "https://todoapp-demo.com",
+      "category": "Mobile"
+    },
+    {
+      "id": 4,
+      "title": "API RESTful",
+      "description": "API robusta e escalável com autenticação JWT, documentação Swagger e testes automatizados.",
+      "image": "/projects/api.jpg",
+      "technologies": ["Node.js", "Express", "MongoDB", "JWT"],
+      "github": "https://github.com/seu-usuario/api",
+      "demo": null,
+      "category": "Backend"
+    }
+  ]
+}
+
