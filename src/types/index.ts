@@ -40,9 +40,10 @@ export interface ExperienceProps {
   id: number;
   company: string;
   position: string;
-  period: string;
+  period: string | null;
   description: string;
   technologies: string[];
+  website?: string | null;
 }
 
 export interface EducationProps {
@@ -51,5 +52,7 @@ export interface EducationProps {
   degree: string;
   period: string;
   description: string;
+  website?: string | null;
+  status?: "completed" | "in_progress";
 }
 

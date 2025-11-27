@@ -11,7 +11,7 @@ export default function Experience() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Experiência & Educação
+            Profissional & Acadêmico
           </h2>
           <div className="w-24 h-1 bg-primary-600 mx-auto"></div>
         </div>
@@ -32,15 +32,30 @@ export default function Experience() {
                   <div className="card">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                       <h4 className="text-xl font-bold text-white">{exp.position}</h4>
-                      <span className="text-sm text-primary-400 font-medium">{exp.period}</span>
+                      {exp.period && (
+                        <span className="text-sm text-primary-400 font-medium">{exp.period}</span>
+                      )}
                     </div>
-                    <p className="text-primary-400 font-semibold mb-2">{exp.company}</p>
+                    <p className="text-primary-400 font-semibold mb-2">
+                      {exp.website ? (
+                        <a
+                          href={exp.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-primary-300 transition-colors"
+                        >
+                          {exp.company}
+                        </a>
+                      ) : (
+                        exp.company
+                      )}
+                    </p>
                     <p className="text-gray-300 mb-4">{exp.description}</p>
                     <div className="flex flex-wrap gap-2">
                       {exp.technologies.map((tech, index) => (
                         <span
                           key={index}
-                          className="text-xs bg-primary-100 text-primary-700 px-3 py-1 rounded-full"
+                          className="text-xs bg-primary-600/20 text-primary-400 border border-primary-600/30 px-3 py-1 rounded-full"
                         >
                           {tech}
                         </span>
@@ -60,18 +75,36 @@ export default function Experience() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14v7M5 10.832v7.223a12.08 12.08 0 006.824 2.998M19 10.832v7.223a12.08 12.08 0 01-6.824 2.998" />
               </svg>
-              Educação
+              Acadêmico
             </h3>
             <div className="space-y-8">
               {education.education.map((edu) => (
                 <div key={edu.id} className="relative pl-8 border-l-2 border-primary-600">
                   <div className="absolute -left-2 top-0 w-4 h-4 bg-primary-600 rounded-full"></div>
                   <div className="card">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                      <h4 className="text-xl font-bold text-white">{edu.degree}</h4>
+                    <h4 className="text-xl font-bold text-white mb-2">{edu.degree}</h4>
+                    <div className="flex items-center gap-2 mb-2">
+                      {edu.status === "in_progress" && (
+                        <span className="text-xs bg-yellow-600/20 text-yellow-400 border border-yellow-600/30 px-2 py-1 rounded-full">
+                          Em andamento
+                        </span>
+                      )}
                       <span className="text-sm text-primary-400 font-medium">{edu.period}</span>
                     </div>
-                    <p className="text-primary-400 font-semibold mb-2">{edu.institution}</p>
+                    <p className="text-primary-400 font-semibold mb-2">
+                      {edu.website ? (
+                        <a
+                          href={edu.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-primary-300 transition-colors"
+                        >
+                          {edu.institution}
+                        </a>
+                      ) : (
+                        edu.institution
+                      )}
+                    </p>
                     <p className="text-gray-300">{edu.description}</p>
                   </div>
                 </div>
