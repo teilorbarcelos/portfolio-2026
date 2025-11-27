@@ -55,4 +55,3 @@ export interface EducationProps {
   website?: string | null;
   status?: "completed" | "in_progress";
 }
-
