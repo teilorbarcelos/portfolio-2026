@@ -20,7 +20,7 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left">
             <div className="inline-block mb-4">
-              <span className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium">
+              <span className="bg-primary-600/20 text-primary-400 border border-primary-600/30 px-4 py-2 rounded-full text-sm font-medium">
                 👋 Olá, eu sou
               </span>
             </div>

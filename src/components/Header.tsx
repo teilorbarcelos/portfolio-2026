@@ -1,8 +1,4 @@
 import { useState } from 'react'
-import personalData from '../data/personal.json'
-import { PersonalInfoProps } from '../types'
-
-const personal = personalData as PersonalInfoProps
 
 interface HeaderProps {
   isScrolled: boolean
@@ -30,7 +26,6 @@ export default function Header({ isScrolled }: HeaderProps) {
       <nav className="section-container">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold text-primary-600">
-            {personal.name.split(' ')[0]}
           </div>
 
           {/* Desktop Menu */}
