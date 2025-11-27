@@ -94,7 +94,7 @@ export default function Header({ isScrolled }: HeaderProps) {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 space-y-4 pb-4">
+          <div className="md:hidden mt-4 space-y-4 pb-4 bg-gray-900 rounded-lg border border-gray-800 shadow-lg px-4 py-4">
             <button
               onClick={() => scrollToSection('home')}
               className="block w-full text-left text-gray-300 hover:text-primary-400 transition-colors"
