@@ -7,7 +7,7 @@ const projects = projectsData as { projects: ProjectProps[] }
 export default function Projects() {
   const [filter, setFilter] = useState<string>('Todos')
 
-  const categories = ['Todos', ...Array.from(new Set(projects.projects.map(p => p.category)))]
+  const categories = ['Todos', 'Estudo', 'Trabalho']
 
   const filteredProjects = filter === 'Todos'
     ? projects.projects
@@ -48,7 +48,7 @@ export default function Projects() {
           {filteredProjects.map((project) => (
             <div key={project.id} className="card group cursor-pointer">
               <div className="relative overflow-hidden rounded-lg mb-4">
-                <div className="aspect-video bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center">
+                <div className="aspect-video bg-gradient-to-br from-gray-800 to-gray-700 flex items-center justify-center">
                   {project.image ? (
                     <img
                       src={project.image}
@@ -56,7 +56,7 @@ export default function Projects() {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                   ) : (
-                    <div className="text-4xl text-primary-600">🚀</div>
+                    <div className="text-4xl text-primary-400">🚀</div>
                   )}
                 </div>
                 <div className="absolute inset-0 bg-primary-600 opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-center justify-center">
@@ -90,10 +90,19 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-              <div className="mb-2">
-                <span className="inline-block bg-primary-100 text-primary-700 text-xs font-medium px-3 py-1 rounded-full">
+              <div className="mb-2 flex items-center gap-2 flex-wrap">
+                <span className={`inline-block text-xs font-medium px-3 py-1 rounded-full ${
+                  project.category === 'Estudo' 
+                    ? 'bg-primary-600/20 text-primary-400 border border-primary-600/30' 
+                    : 'bg-green-600/20 text-green-400 border border-green-600/30'
+                }`}>
                   {project.category}
                 </span>
+                {project.period && (
+                  <span className="text-xs text-gray-400">
+                    {project.period}
+                  </span>
+                )}
               </div>
               <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
               <p className="text-gray-300 mb-4">{project.description}</p>
