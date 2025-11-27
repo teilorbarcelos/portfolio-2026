@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser'
 import { useState } from 'react'
 import personalData from '../data/personal.json'
 import { PersonalInfoProps } from '../types'
@@ -18,16 +19,43 @@ export default function Contact() {
     setIsSubmitting(true)
     setSubmitStatus('idle')
 
-    // Simular envio do formulário
-    setTimeout(() => {
+    try {
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error('EmailJS credentials not configured. Please check your .env file.')
+      }
+
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_email: personal.email,
+        },
+        publicKey
+      )
+
       setIsSubmitting(false)
       setSubmitStatus('success')
       setFormData({ name: '', email: '', message: '' })
       
       setTimeout(() => {
         setSubmitStatus('idle')
-      }, 3000)
-    }, 1000)
+      }, 5000)
+    } catch (error) {
+      console.error('Erro ao enviar email:', error)
+      setIsSubmitting(false)
+      setSubmitStatus('error')
+      
+      setTimeout(() => {
+        setSubmitStatus('idle')
+      }, 5000)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -214,13 +242,13 @@ export default function Contact() {
                 {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
               </button>
               {submitStatus === 'success' && (
-                <div className="p-4 bg-green-50 border border-green-200 rounded-lg text-green-700">
+                <div className="p-4 bg-green-600/20 border border-green-600/30 rounded-lg text-green-400">
                   Mensagem enviada com sucesso! Entrarei em contato em breve.
                 </div>
               )}
               {submitStatus === 'error' && (
-                <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-700">
-                  Erro ao enviar mensagem. Tente novamente.
+                <div className="p-4 bg-red-600/20 border border-red-600/30 rounded-lg text-red-400">
+                  Erro ao enviar mensagem. Tente novamente ou entre em contato diretamente pelo email.
                 </div>
               )}
             </form>
