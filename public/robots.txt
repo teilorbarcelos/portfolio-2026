@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://teilorwebdev.vercel.app/sitemap.xml
+
