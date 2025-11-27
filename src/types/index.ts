@@ -3,7 +3,7 @@ export interface PersonalInfoProps {
   role: string;
   bio: string;
   email: string;
-  phone: string;
+  phone: string | null;
   location: string;
   avatar: string;
   social: {
@@ -18,11 +18,12 @@ export interface ProjectProps {
   id: number;
   title: string;
   description: string;
-  image: string;
+  image: string | null;
   technologies: string[];
-  github?: string;
+  github?: string | null;
   demo?: string | null;
   category: string;
+  period?: string;
 }
 
 export interface SkillProps {
@@ -39,9 +40,10 @@ export interface ExperienceProps {
   id: number;
   company: string;
   position: string;
-  period: string;
+  period: string | null;
   description: string;
   technologies: string[];
+  website?: string | null;
 }
 
 export interface EducationProps {
@@ -50,5 +52,7 @@ export interface EducationProps {
   degree: string;
   period: string;
   description: string;
+  website?: string | null;
+  status?: "completed" | "in_progress";
 }
 

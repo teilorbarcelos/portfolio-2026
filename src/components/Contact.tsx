@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser'
 import { useState } from 'react'
 import personalData from '../data/personal.json'
 import { PersonalInfoProps } from '../types'
@@ -18,16 +19,43 @@ export default function Contact() {
     setIsSubmitting(true)
     setSubmitStatus('idle')
 
-    // Simular envio do formulário
-    setTimeout(() => {
+    try {
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error('EmailJS credentials not configured. Please check your .env file.')
+      }
+
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_email: personal.email,
+        },
+        publicKey
+      )
+
       setIsSubmitting(false)
       setSubmitStatus('success')
       setFormData({ name: '', email: '', message: '' })
       
       setTimeout(() => {
         setSubmitStatus('idle')
-      }, 3000)
-    }, 1000)
+      }, 5000)
+    } catch (error) {
+      console.error('Erro ao enviar email:', error)
+      setIsSubmitting(false)
+      setSubmitStatus('error')
+      
+      setTimeout(() => {
+        setSubmitStatus('idle')
+      }, 5000)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -38,14 +66,14 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="section-container bg-white">
+    <section id="contact" className="section-container bg-gray-900 scroll-mt-40">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Entre em Contato
           </h2>
           <div className="w-24 h-1 bg-primary-600 mx-auto mb-4"></div>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Estou sempre aberto a novas oportunidades e projetos interessantes.
             Vamos conversar!
           </p>
@@ -54,60 +82,60 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+            <h3 className="text-2xl font-bold text-white mb-6">
               Informações de Contato
             </h3>
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
-                  <svg className="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex-shrink-0 w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mr-4 border border-gray-700">
+                  <svg className="w-6 h-6 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                  <a href={`mailto:${personal.email}`} className="text-primary-600 hover:underline">
+                  <h4 className="font-semibold text-white mb-1">Email</h4>
+                  <a href={`mailto:${personal.email}`} className="text-primary-400 hover:underline">
                     {personal.email}
                   </a>
                 </div>
               </div>
               {personal.phone && <div className="flex items-start">
-                <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
-                  <svg className="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex-shrink-0 w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mr-4 border border-gray-700">
+                  <svg className="w-6 h-6 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Telefone</h4>
-                  <a href={`tel:${personal.phone}`} className="text-primary-600 hover:underline">
+                  <h4 className="font-semibold text-white mb-1">Telefone</h4>
+                  <a href={`tel:${personal.phone}`} className="text-primary-400 hover:underline">
                     {personal.phone}
                   </a>
                 </div>
               </div>}
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
-                  <svg className="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex-shrink-0 w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mr-4 border border-gray-700">
+                  <svg className="w-6 h-6 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Localização</h4>
-                  <p className="text-gray-600">{personal.location}</p>
+                  <h4 className="font-semibold text-white mb-1">Localização</h4>
+                  <p className="text-gray-300">{personal.location}</p>
                 </div>
               </div>
             </div>
 
             {/* Social Links */}
             <div className="mt-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Redes Sociais</h4>
+              <h4 className="font-semibold text-white mb-4">Redes Sociais</h4>
               <div className="flex gap-4">
                 {personal.social.github && (
                   <a
                     href={personal.social.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center text-gray-600 hover:bg-primary-600 hover:text-white transition-colors"
+                    className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-300 hover:bg-primary-600 hover:text-white transition-colors border border-gray-700"
                     aria-label="GitHub"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -120,7 +148,7 @@ export default function Contact() {
                     href={personal.social.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center text-gray-600 hover:bg-primary-600 hover:text-white transition-colors"
+                    className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-300 hover:bg-primary-600 hover:text-white transition-colors border border-gray-700"
                     aria-label="LinkedIn"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -133,7 +161,7 @@ export default function Contact() {
                     href={personal.social.twitter}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center text-gray-600 hover:bg-primary-600 hover:text-white transition-colors"
+                    className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-300 hover:bg-primary-600 hover:text-white transition-colors border border-gray-700"
                     aria-label="Twitter"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -146,7 +174,7 @@ export default function Contact() {
                     href={personal.social.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center text-gray-600 hover:bg-primary-600 hover:text-white transition-colors"
+                    className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-300 hover:bg-primary-600 hover:text-white transition-colors border border-gray-700"
                     aria-label="Instagram"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -162,7 +190,7 @@ export default function Contact() {
           <div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                   Nome
                 </label>
                 <input
@@ -172,12 +200,12 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
                   placeholder="Seu nome"
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                   Email
                 </label>
                 <input
@@ -187,12 +215,12 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
                   placeholder="seu.email@example.com"
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                   Mensagem
                 </label>
                 <textarea
@@ -202,7 +230,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all resize-none"
                   placeholder="Sua mensagem..."
                 />
               </div>
@@ -214,13 +242,13 @@ export default function Contact() {
                 {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
               </button>
               {submitStatus === 'success' && (
-                <div className="p-4 bg-green-50 border border-green-200 rounded-lg text-green-700">
+                <div className="p-4 bg-green-600/20 border border-green-600/30 rounded-lg text-green-400">
                   Mensagem enviada com sucesso! Entrarei em contato em breve.
                 </div>
               )}
               {submitStatus === 'error' && (
-                <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-700">
-                  Erro ao enviar mensagem. Tente novamente.
+                <div className="p-4 bg-red-600/20 border border-red-600/30 rounded-lg text-red-400">
+                  Erro ao enviar mensagem. Tente novamente ou entre em contato diretamente pelo email.
                 </div>
               )}
             </form>

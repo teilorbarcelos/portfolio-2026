@@ -16,15 +16,34 @@ Um portfólio moderno e responsivo desenvolvido com Vite, React, TypeScript e Ta
 2. Instale as dependências:
 
 ```bash
-npm install
+pnpm install
 ```
+
+3. Configure as variáveis de ambiente para o formulário de contato:
+
+Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
+
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+**Como obter as credenciais do EmailJS:**
+1. Acesse [https://www.emailjs.com/](https://www.emailjs.com/) e crie uma conta gratuita
+2. Crie um serviço de email (Gmail, Outlook, etc.)
+3. Crie um template de email com as variáveis: `{{from_name}}`, `{{from_email}}`, `{{message}}`
+4. Copie o Service ID, Template ID e Public Key
+5. Cole no arquivo `.env`
+
+**Plano gratuito:** 200 emails/mês - mais que suficiente para um portfólio pessoal!
 
 ## 🛠️ Desenvolvimento
 
 Para iniciar o servidor de desenvolvimento:
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 O projeto estará disponível em `http://localhost:3000`
@@ -34,7 +53,7 @@ O projeto estará disponível em `http://localhost:3000`
 Para criar uma build de produção:
 
 ```bash
-npm run build
+pnpm build
 ```
 
 Os arquivos serão gerados na pasta `dist/`

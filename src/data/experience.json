@@ -2,28 +2,21 @@
   "experiences": [
     {
       "id": 1,
-      "company": "Empresa Tech",
-      "position": "Desenvolvedor Full Stack",
-      "period": "2023 - Presente",
-      "description": "Desenvolvimento de aplicações web modernas utilizando React e Node.js. Trabalho em equipe ágil com foco em qualidade e performance.",
-      "technologies": ["React", "Node.js", "TypeScript", "AWS"]
+      "company": "UDS Tecnologia",
+      "position": "Desenvolvedor Web Full Stack",
+      "period": "Jan 2022 - Dez 2025",
+      "description": "Desenvolvimento de aplicações web full stack utilizando React e Node.js em regime remoto. Trabalhei em diversos projetos de grande escala para diferentes clientes, incluindo desenvolvimento de portais, backoffices, sistemas de gestão e integrações. Responsável pelo desenvolvimento completo de soluções desde o frontend até o backend, garantindo qualidade, performance e escalabilidade.",
+      "technologies": ["React", "Node.js", "TypeScript", "Next.js", "NestJS", "GraphQL", "REST API", "Tailwind CSS"],
+      "website": "https://uds.com.br/"
     },
     {
       "id": 2,
-      "company": "Startup Inovadora",
-      "position": "Desenvolvedor Frontend",
-      "period": "2021 - 2023",
-      "description": "Criação de interfaces responsivas e interativas. Implementação de design systems e otimização de performance.",
-      "technologies": ["React", "Vue.js", "Tailwind CSS", "Figma"]
-    },
-    {
-      "id": 3,
-      "company": "Agência Digital",
-      "position": "Desenvolvedor Júnior",
-      "period": "2020 - 2021",
-      "description": "Desenvolvimento de sites institucionais e landing pages. Aprendizado de boas práticas e metodologias ágeis.",
-      "technologies": ["HTML", "CSS", "JavaScript", "WordPress"]
+      "company": "Vante Telecomunicações",
+      "position": "Técnico de Telecomunicações",
+      "period": null,
+      "description": "Técnico de telecomunicações em empresa que distribuía internet em várias cidades do sul de Minas Gerais. Responsável pela configuração, manutenção e suporte técnico de infraestrutura de telecomunicações, garantindo a qualidade do serviço de internet para os clientes da região.",
+      "technologies": ["Redes", "Telecomunicações", "Infraestrutura"],
+      "website": null
     }
   ]
 }
-

@@ -1,45 +1,136 @@
 {
   "projects": [
     {
+      "id": 5,
+      "title": "MLetras Stellare - Portal",
+      "description": "Portal completo para gerenciamento de usuários, atividades, simulados e conteúdos educacionais (vídeo, PDF, HTML) para escolas. Sistema desenvolvido para auxiliar professores e alunos na jornada do aprendizado, com interface intuitiva e funcionalidades avançadas de gestão educacional.",
+      "image": "/stellare-portal.png",
+      "technologies": ["React", "TypeScript", "Node.js", "REST API"],
+      "github": null,
+      "demo": "https://portal.sistemastellare.com.br/",
+      "category": "Trabalho",
+      "period": "Mar 2025 - Nov 2025"
+    },
+    {
+      "id": 6,
+      "title": "MLetras Stellare - Backoffice",
+      "description": "Backoffice administrativo para gerenciamento completo do sistema educacional MLetras Stellare. Permite administração de usuários, conteúdos, atividades, simulados e configurações do sistema. Desenvolvido com React e Node.js, compartilhando backend com o portal.",
+      "image": "/stellare-backoffice.png",
+      "technologies": ["React", "TypeScript", "Node.js", "REST API"],
+      "github": null,
+      "demo": "https://backoffice.sistemastellare.com.br/",
+      "category": "Trabalho",
+      "period": "Mar 2025 - Nov 2025"
+    },
+    {
+      "id": 7,
+      "title": "Neodent - Consignado",
+      "description": "Portal completo para gerenciamento de clientes do consignado de produtos Straumann da Neodent. Sistema desenvolvido do zero, incluindo frontend, backend Node.js e integrações. Projeto desenvolvido individualmente, com foco em usabilidade e performance para gestão de consignados.",
+      "image": "/neodent-consignado.png",
+      "technologies": ["React", "TypeScript", "Node.js", "REST API"],
+      "github": null,
+      "demo": "https://consignado.neodent.com.br/",
+      "category": "Trabalho",
+      "period": "Mar 2024 - Fev 2025"
+    },
+    {
+      "id": 8,
+      "title": "Neodent - Backoffice",
+      "description": "Backoffice administrativo para gerenciamento completo do sistema de consignado Neodent. Sistema desenvolvido individualmente com React e Node.js, compartilhando backend com o portal de consignado. Permite administração completa de clientes, produtos e operações do consignado.",
+      "image": "/neodent-backoffice.png",
+      "technologies": ["React", "TypeScript", "Node.js", "REST API"],
+      "github": null,
+      "demo": "https://backoffice.neodent.com.br/",
+      "category": "Trabalho",
+      "period": "Mar 2024 - Fev 2025"
+    },
+    {
+      "id": 9,
+      "title": "Nexo Jornal",
+      "description": "Manutenção e desenvolvimento de funcionalidades no portal de notícias Nexo Jornal. Trabalhei na integração com Subscribe with Google e Evolok, além da refatoração completa do projeto com frontend Next.js e backend WordPress, utilizando GraphQL para integração. Projeto de grande escala com foco em performance e experiência do usuário.",
+      "image": "/nexojornal.png",
+      "technologies": ["Next.js", "React", "TypeScript", "WordPress", "GraphQL", "CSS"],
+      "github": null,
+      "demo": "https://www.nexojornal.com.br/",
+      "category": "Trabalho",
+      "period": "Jul 2022 - Fev 2024"
+    },
+    {
+      "id": 10,
+      "title": "MedAssist",
+      "description": "Migração e substituição do backend C# por uma solução em NestJS para intermediar a comunicação entre o backoffice, banco de dados e aplicativo mobile. Desenvolvimento de APIs RESTful robustas e escaláveis para suportar as funcionalidades do sistema de assistência médica.",
+      "image": null,
+      "technologies": ["NestJS", "TypeScript", "Node.js", "REST API"],
+      "github": null,
+      "demo": null,
+      "category": "Trabalho",
+      "period": "Abr 2022 - Jul 2022"
+    },
+    {
+      "id": 11,
+      "title": "Whirlpool - Food Hall Backoffice",
+      "description": "Desenvolvimento e adição de funcionalidades ao backoffice de gerenciamento do food hall da Whirlpool. Sistema interno para administração de operações, gestão de estabelecimentos e controle de processos relacionados ao food hall.",
+      "image": null,
+      "technologies": ["React", "TypeScript", "Tailwind CSS"],
+      "github": null,
+      "demo": null,
+      "category": "Trabalho",
+      "period": "Mar 2022 - Abr 2022"
+    },
+    {
+      "id": 12,
+      "title": "Credisan - Backoffice",
+      "description": "Sistema interno de gerenciamento para área financeira desenvolvido para a Credisan. Backoffice completo para administração de cooperados, parceiros e propostas de crédito, incluindo sistema de simulações de crédito para parceiros. Desenvolvimento frontend com integração ao backend C#.",
+      "image": null,
+      "technologies": ["React", "TypeScript", "Tailwind CSS", "REST API"],
+      "github": null,
+      "demo": null,
+      "category": "Trabalho",
+      "period": "Jan 2022 - Mar 2022"
+    },
+    {
       "id": 1,
-      "title": "Projeto E-commerce",
-      "description": "Plataforma completa de e-commerce com sistema de pagamento integrado, carrinho de compras e painel administrativo.",
-      "image": "/projects/ecommerce.jpg",
-      "technologies": ["React", "TypeScript", "Node.js", "PostgreSQL", "Stripe"],
-      "github": "https://github.com/seu-usuario/ecommerce",
-      "demo": "https://ecommerce-demo.com",
-      "category": "Web App"
+      "title": "Letmeask",
+      "description": "Plataforma de perguntas e respostas em tempo real desenvolvida durante o evento NLW Together da Rocketseat. Permite que usuários criem salas de Q&A e interajam através de perguntas e respostas.",
+      "image": "/letmeask.png",
+      "technologies": ["React", "TypeScript", "Firebase", "Sass"],
+      "github": null,
+      "demo": "https://letmeask-f38c5.web.app/",
+      "category": "Estudo",
+      "period": "Ago 2021"
     },
     {
       "id": 2,
-      "title": "Dashboard Analytics",
-      "description": "Dashboard interativo para análise de dados com gráficos em tempo real e exportação de relatórios.",
-      "image": "/projects/dashboard.jpg",
-      "technologies": ["React", "TypeScript", "Chart.js", "Tailwind CSS"],
-      "github": "https://github.com/seu-usuario/dashboard",
-      "demo": "https://dashboard-demo.com",
-      "category": "Web App"
+      "title": "Devdotfinance",
+      "description": "Aplicação web para controle financeiro pessoal desenvolvida com HTML, CSS e JavaScript puro. Permite cadastrar entradas e saídas financeiras com interface moderna e responsiva.",
+      "image": "/devdotfinance.png",
+      "technologies": ["HTML5", "CSS3", "JavaScript"],
+      "github": null,
+      "demo": "https://devdotfinance.web.app/",
+      "category": "Estudo",
+      "period": "Set 2021"
     },
     {
       "id": 3,
-      "title": "App Mobile de Tarefas",
-      "description": "Aplicativo mobile para gerenciamento de tarefas com sincronização em nuvem e notificações push.",
-      "image": "/projects/todoapp.jpg",
-      "technologies": ["React Native", "TypeScript", "Firebase"],
-      "github": "https://github.com/seu-usuario/todoapp",
-      "demo": "https://todoapp-demo.com",
-      "category": "Mobile"
+      "title": "Gameplay",
+      "description": "Aplicativo mobile desenvolvido em React Native para agendamento de partidas de jogos. Permite que usuários encontrem parceiros para jogar seus jogos favoritos.",
+      "image": "/gameplay.png",
+      "technologies": ["React Native", "TypeScript", "Expo"],
+      "github": "https://github.com/teilorbarcelos/gameplay",
+      "demo": null,
+      "category": "Estudo",
+      "period": "Out 2021"
     },
     {
       "id": 4,
-      "title": "API RESTful",
-      "description": "API robusta e escalável com autenticação JWT, documentação Swagger e testes automatizados.",
-      "image": "/projects/api.jpg",
-      "technologies": ["Node.js", "Express", "MongoDB", "JWT"],
-      "github": "https://github.com/seu-usuario/api",
-      "demo": null,
-      "category": "Backend"
+      "title": "Origin",
+      "description": "Website moderno desenvolvido com Next.js apresentando uma landing page responsiva e otimizada. Demonstra habilidades em desenvolvimento front-end com foco em performance e SEO.",
+      "image": "/origin.png",
+      "technologies": ["Next.js", "React", "TypeScript", "CSS Modules"],
+      "github": null,
+      "demo": "https://origin-ten.vercel.app/",
+      "category": "Estudo",
+      "period": "Nov 2021"
     }
   ]
 }
-

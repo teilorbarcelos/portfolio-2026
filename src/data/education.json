@@ -2,18 +2,30 @@
   "education": [
     {
       "id": 1,
-      "institution": "Universidade Tecnológica",
-      "degree": "Bacharelado em Ciência da Computação",
-      "period": "2016 - 2020",
-      "description": "Formação completa em programação, algoritmos, estruturas de dados e engenharia de software."
+      "institution": "FAM - Centro Universitário",
+      "degree": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+      "period": "Jun 2022 - Dez 2024",
+      "description": "Formação completa em análise e desenvolvimento de sistemas, com foco em programação, algoritmos, estruturas de dados, banco de dados, engenharia de software e desenvolvimento de aplicações.",
+      "website": "https://www.vemprafam.com.br/",
+      "status": "completed"
     },
     {
       "id": 2,
-      "institution": "Plataforma Online",
-      "degree": "Certificação em Desenvolvimento Web Full Stack",
-      "period": "2021",
-      "description": "Curso intensivo focado em tecnologias modernas de desenvolvimento web."
+      "institution": "Anhanguera",
+      "degree": "Pós-graduação em Desenvolvimento Web Full Stack",
+      "period": "Jan 2025 - Jan 2026",
+      "description": "Especialização completa em desenvolvimento web full stack, abrangendo tecnologias frontend e backend modernas, arquitetura de software, APIs RESTful, bancos de dados e metodologias ágeis.",
+      "website": "https://www.anhanguera.com/",
+      "status": "completed"
+    },
+    {
+      "id": 3,
+      "institution": "Anhanguera",
+      "degree": "Pós-graduação em IA para Desenvolvedores",
+      "period": "Jan 2026 - Jan 2027",
+      "description": "Especialização em Inteligência Artificial aplicada ao desenvolvimento de software, incluindo machine learning, deep learning, processamento de linguagem natural e integração de IA em aplicações.",
+      "website": "https://www.anhanguera.com/",
+      "status": "in_progress"
     }
   ]
 }
-

@@ -14,23 +14,23 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 via-white to-primary-50 pt-20"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 pt-20"
     >
       <div className="section-container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left">
             <div className="inline-block mb-4">
-              <span className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium">
+              <span className="bg-primary-600/20 text-primary-400 border border-primary-600/30 px-4 py-2 rounded-full text-sm font-medium">
                 👋 Olá, eu sou
               </span>
             </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-4">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4">
               {personal.name}
             </h1>
-            <h2 className="text-2xl md:text-3xl text-primary-600 font-semibold mb-6">
+            <h2 className="text-2xl md:text-3xl text-primary-400 font-semibold mb-6">
               {personal.role}
             </h2>
-            <p className="text-lg text-gray-600 mb-8 max-w-xl">
+            <p className="text-lg text-gray-300 mb-8 max-w-xl">
               {personal.bio}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -53,7 +53,7 @@ export default function Hero() {
                   href={personal.social.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-primary-600 transition-colors"
+                  className="text-gray-400 hover:text-primary-400 transition-colors"
                   aria-label="GitHub"
                 >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -66,7 +66,7 @@ export default function Hero() {
                   href={personal.social.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-primary-600 transition-colors"
+                  className="text-gray-400 hover:text-primary-400 transition-colors"
                   aria-label="LinkedIn"
                 >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -79,7 +79,7 @@ export default function Hero() {
                   href={personal.social.twitter}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-primary-600 transition-colors"
+                  className="text-gray-400 hover:text-primary-400 transition-colors"
                   aria-label="Twitter"
                 >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -92,7 +92,7 @@ export default function Hero() {
                   href={personal.social.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-primary-600 transition-colors"
+                  className="text-gray-400 hover:text-primary-400 transition-colors"
                   aria-label="Instagram"
                 >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -119,9 +119,9 @@ export default function Hero() {
                   )}
                 </div>
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-white rounded-lg shadow-lg p-4">
-                <div className="text-sm text-gray-600">📍</div>
-                <div className="text-sm font-medium text-gray-900">{personal.location}</div>
+              <div className="absolute -bottom-4 -right-4 bg-gray-800 rounded-lg shadow-lg p-4 border border-gray-700">
+                <div className="text-sm text-gray-400">📍</div>
+                <div className="text-sm font-medium text-white">{personal.location}</div>
               </div>
             </div>
           </div>
