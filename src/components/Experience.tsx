@@ -7,7 +7,7 @@ const education = educationData as { education: EducationProps[] }
 
 export default function Experience() {
   return (
-    <section id="experience" className="section-container bg-gray-800">
+    <section id="experience" className="section-container bg-gray-800 scroll-mt-40">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">

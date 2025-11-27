@@ -14,7 +14,7 @@ export default function Projects() {
     : projects.projects.filter(p => p.category === filter)
 
   return (
-    <section id="projects" className="section-container bg-gray-900">
+    <section id="projects" className="section-container bg-gray-900 scroll-mt-40">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
