@@ -56,19 +56,19 @@ export default function About() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white mb-1">Desenvolvimento Web</h4>
-                  <p className="text-gray-300">Criação de aplicações web modernas e responsivas</p>
+                  <h4 className="font-semibold text-white mb-1">Desenvolvimento Web Full Stack</h4>
+                  <p className="text-gray-300">Desenvolvimento de aplicações web com React, Node.js e tecnologias modernas</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center mr-4">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white mb-1">Mobile</h4>
-                  <p className="text-gray-300">Desenvolvimento de aplicativos mobile multiplataforma</p>
+                  <h4 className="font-semibold text-white mb-1">APIs e Backend</h4>
+                  <p className="text-gray-300">Desenvolvimento de APIs RESTful, integrações e arquitetura de backend</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -78,8 +78,8 @@ export default function About() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white mb-1">UI/UX Design</h4>
-                  <p className="text-gray-300">Criação de interfaces intuitivas e atraentes</p>
+                  <h4 className="font-semibold text-white mb-1">Implementação de Interfaces</h4>
+                  <p className="text-gray-300">Transformação de protótipos em interfaces funcionais e responsivas</p>
                 </div>
               </div>
             </div>
