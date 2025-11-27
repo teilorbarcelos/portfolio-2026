@@ -23,7 +23,7 @@ export default function Header({ isScrolled }: HeaderProps) {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white shadow-md py-3'
+          ? 'bg-gray-900 shadow-md py-3 border-b border-gray-800'
           : 'bg-transparent py-5'
       }`}
     >
@@ -37,31 +37,31 @@ export default function Header({ isScrolled }: HeaderProps) {
           <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection('home')}
-              className="text-gray-700 hover:text-primary-600 transition-colors"
+              className="text-gray-300 hover:text-primary-400 transition-colors"
             >
               Início
             </button>
             <button
               onClick={() => scrollToSection('about')}
-              className="text-gray-700 hover:text-primary-600 transition-colors"
+              className="text-gray-300 hover:text-primary-400 transition-colors"
             >
               Sobre
             </button>
             <button
               onClick={() => scrollToSection('skills')}
-              className="text-gray-700 hover:text-primary-600 transition-colors"
+              className="text-gray-300 hover:text-primary-400 transition-colors"
             >
               Habilidades
             </button>
             <button
               onClick={() => scrollToSection('projects')}
-              className="text-gray-700 hover:text-primary-600 transition-colors"
+              className="text-gray-300 hover:text-primary-400 transition-colors"
             >
               Projetos
             </button>
             <button
               onClick={() => scrollToSection('experience')}
-              className="text-gray-700 hover:text-primary-600 transition-colors"
+              className="text-gray-300 hover:text-primary-400 transition-colors"
             >
               Experiência
             </button>
@@ -75,7 +75,7 @@ export default function Header({ isScrolled }: HeaderProps) {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-700"
+            className="md:hidden text-gray-300"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -102,31 +102,31 @@ export default function Header({ isScrolled }: HeaderProps) {
           <div className="md:hidden mt-4 space-y-4 pb-4">
             <button
               onClick={() => scrollToSection('home')}
-              className="block w-full text-left text-gray-700 hover:text-primary-600 transition-colors"
+              className="block w-full text-left text-gray-300 hover:text-primary-400 transition-colors"
             >
               Início
             </button>
             <button
               onClick={() => scrollToSection('about')}
-              className="block w-full text-left text-gray-700 hover:text-primary-600 transition-colors"
+              className="block w-full text-left text-gray-300 hover:text-primary-400 transition-colors"
             >
               Sobre
             </button>
             <button
               onClick={() => scrollToSection('skills')}
-              className="block w-full text-left text-gray-700 hover:text-primary-600 transition-colors"
+              className="block w-full text-left text-gray-300 hover:text-primary-400 transition-colors"
             >
               Habilidades
             </button>
             <button
               onClick={() => scrollToSection('projects')}
-              className="block w-full text-left text-gray-700 hover:text-primary-600 transition-colors"
+              className="block w-full text-left text-gray-300 hover:text-primary-400 transition-colors"
             >
               Projetos
             </button>
             <button
               onClick={() => scrollToSection('experience')}
-              className="block w-full text-left text-gray-700 hover:text-primary-600 transition-colors"
+              className="block w-full text-left text-gray-300 hover:text-primary-400 transition-colors"
             >
               Experiência
             </button>
