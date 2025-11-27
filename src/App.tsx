@@ -7,6 +7,10 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
+import personalData from './data/personal.json'
+import { PersonalInfoProps } from './types'
+
+const personal = personalData as PersonalInfoProps
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -20,8 +24,40 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: personal.name,
+    jobTitle: personal.role,
+    description: personal.bio,
+    email: personal.email,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: personal.location,
+      addressCountry: 'BR'
+    },
+    sameAs: [
+      personal.social.github,
+      personal.social.linkedin
+    ].filter(Boolean),
+    url: typeof window !== 'undefined' ? window.location.origin : '',
+    knowsAbout: [
+      'Web Development',
+      'React',
+      'Node.js',
+      'TypeScript',
+      'JavaScript',
+      'Full Stack Development'
+    ]
+  }
+
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      
       <Header isScrolled={isScrolled} />
       <main>
         <Hero />
