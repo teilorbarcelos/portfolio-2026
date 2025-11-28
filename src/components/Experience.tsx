@@ -29,7 +29,7 @@ export default function Experience() {
               {experiences.experiences.map((exp) => (
                 <div key={exp.id} className="relative pl-8 border-l-2 border-primary-600">
                   <div className="absolute -left-2 top-0 w-4 h-4 bg-primary-600 rounded-full"></div>
-                  <div className="card">
+                  <div className="bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border border-gray-700">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                       <h4 className="text-xl font-bold text-white">{exp.position}</h4>
                       {exp.period && (
@@ -81,7 +81,7 @@ export default function Experience() {
               {education.education.map((edu) => (
                 <div key={edu.id} className="relative pl-8 border-l-2 border-primary-600">
                   <div className="absolute -left-2 top-0 w-4 h-4 bg-primary-600 rounded-full"></div>
-                  <div className="card">
+                  <div className="bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border border-gray-700">
                     <h4 className="text-xl font-bold text-white mb-2">{edu.degree}</h4>
                     <div className="flex items-center gap-2 mb-2">
                       {edu.status === "in_progress" && (
