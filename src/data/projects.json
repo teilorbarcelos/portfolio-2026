@@ -3,9 +3,14 @@
     {
       "id": 5,
       "title": "MLetras Stellare - Portal",
-      "description": "Portal completo para gerenciamento de usuários, atividades, simulados e conteúdos educacionais (vídeo, PDF, HTML) para escolas. Sistema desenvolvido para auxiliar professores e alunos na jornada do aprendizado, com interface intuitiva e funcionalidades avançadas de gestão educacional.",
+      "description": "Portal educacional escalável projetado para sustentar picos de 10 mil usuários online simultaneamente. Gerencia fluxos complexos de atividades, simulados e conteúdos multimídia (vídeo, PDF, HTML), proporcionando uma jornada de aprendizado estável e intuitiva para alunos e professores no ecossistema Stellare.",
       "image": "/stellare-portal.png",
-      "technologies": ["React", "TypeScript", "Node.js", "REST API"],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "REST API"
+      ],
       "github": null,
       "demo": "https://portal.sistemastellare.com.br/",
       "category": "Trabalho",
@@ -14,9 +19,14 @@
     {
       "id": 6,
       "title": "MLetras Stellare - Backoffice",
-      "description": "Backoffice administrativo para gerenciamento completo do sistema educacional MLetras Stellare. Permite administração de usuários, conteúdos, atividades, simulados e configurações do sistema. Desenvolvido com React e Node.js, compartilhando backend com o portal.",
+      "description": "Centro de comando administrativo para o ecossistema educacional MLetras Stellare. Permite a gestão granular de milhares de usuários, conteúdos pedagógicos e configurações globais de sistema, compartilhando um backend robusto e de alta disponibilidade com o portal principal.",
       "image": "/stellare-backoffice.png",
-      "technologies": ["React", "TypeScript", "Node.js", "REST API"],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "REST API"
+      ],
       "github": null,
       "demo": "https://backoffice.sistemastellare.com.br/",
       "category": "Trabalho",
@@ -25,9 +35,14 @@
     {
       "id": 7,
       "title": "Neodent - Consignado",
-      "description": "Portal completo para gerenciamento de clientes do consignado de produtos Straumann da Neodent. Sistema desenvolvido do zero, incluindo frontend, backend Node.js e integrações. Projeto desenvolvido individualmente, com foco em usabilidade e performance para gestão de consignados.",
+      "description": "Arquitetura e desenvolvimento Full Stack (do zero ao deploy) de um portal para gestão de consignados Straumann/Neodent. Atuando como único responsável técnico, implementei uma solução que automatizou processos manuais de estoque e vendas, garantindo integridade de dados e alta performance operacional.",
       "image": "/neodent-consignado.png",
-      "technologies": ["React", "TypeScript", "Node.js", "REST API"],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "REST API"
+      ],
       "github": null,
       "demo": "https://consignado.neodent.com.br/",
       "category": "Trabalho",
@@ -36,9 +51,14 @@
     {
       "id": 8,
       "title": "Neodent - Backoffice",
-      "description": "Backoffice administrativo para gerenciamento completo do sistema de consignado Neodent. Sistema desenvolvido individualmente com React e Node.js, compartilhando backend com o portal de consignado. Permite administração completa de clientes, produtos e operações do consignado.",
+      "description": "Painel administrativo centralizado para o sistema de consignados Neodent. Desenvolvido individualmente para permitir o controle total de operações financeiras, catálogo de produtos e gestão de parceiros, integrando-se via APIs resilientes ao ecossistema da Straumann.",
       "image": "/neodent-backoffice.png",
-      "technologies": ["React", "TypeScript", "Node.js", "REST API"],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "REST API"
+      ],
       "github": null,
       "demo": "https://backoffice.neodent.com.br/",
       "category": "Trabalho",
@@ -47,9 +67,16 @@
     {
       "id": 9,
       "title": "Nexo Jornal",
-      "description": "Manutenção e desenvolvimento de funcionalidades no portal de notícias Nexo Jornal. Trabalhei na integração com Subscribe with Google e Evolok, além da refatoração completa do projeto com frontend Next.js e backend WordPress, utilizando GraphQL para integração. Projeto de grande escala com foco em performance e experiência do usuário.",
+      "description": "Atuação no desenvolvimento e modernização técnica do portal Nexo Jornal. Participei ativamente da transição de um ecossistema legado em React/JS gerenciado por plataformas estrangeiras, para uma arquitetura robusta em Next.js com TypeScript e GraphQL, integrando-se ao WordPress como CMS central. A solução elevou a manutenibilidade, performance e autonomia editorial e técnica, integrando ferramentas cruciais como 'Subscribe with Google'.",
       "image": "/nexojornal.png",
-      "technologies": ["Next.js", "React", "TypeScript", "WordPress", "GraphQL", "CSS"],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "WordPress",
+        "GraphQL",
+        "CSS"
+      ],
       "github": null,
       "demo": "https://www.nexojornal.com.br/",
       "category": "Trabalho",
@@ -58,9 +85,14 @@
     {
       "id": 10,
       "title": "MedAssist",
-      "description": "Migração e substituição do backend C# por uma solução em NestJS para intermediar a comunicação entre o backoffice, banco de dados e aplicativo mobile. Desenvolvimento de APIs RESTful robustas e escaláveis para suportar as funcionalidades do sistema de assistência médica.",
+      "description": "Modernização estratégica de infraestrutura, substituindo o backend legado (C#) por uma solução performática em NestJS. Desenvolvi APIs RESTful robustas para servir como camada de orquestração entre backoffice, banco de dados e aplicativos mobile, elevando a manutenibilidade e velocidade de resposta do sistema.",
       "image": null,
-      "technologies": ["NestJS", "TypeScript", "Node.js", "REST API"],
+      "technologies": [
+        "NestJS",
+        "TypeScript",
+        "Node.js",
+        "REST API"
+      ],
       "github": null,
       "demo": null,
       "category": "Trabalho",
@@ -69,9 +101,13 @@
     {
       "id": 11,
       "title": "Whirlpool - Food Hall Backoffice",
-      "description": "Desenvolvimento e adição de funcionalidades ao backoffice de gerenciamento do food hall da Whirlpool. Sistema interno para administração de operações, gestão de estabelecimentos e controle de processos relacionados ao food hall.",
+      "description": "Expansão de funcionalidades e manutenção crítica do backoffice interno da Whirlpool (Food Hall). Foco na otimização de fluxos operacionais e gestão de estabelecimentos, garantindo eficiência na administração de processos internos complexos.",
       "image": null,
-      "technologies": ["React", "TypeScript", "Tailwind CSS"],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
       "github": null,
       "demo": null,
       "category": "Trabalho",
@@ -80,9 +116,14 @@
     {
       "id": 12,
       "title": "Credisan - Backoffice",
-      "description": "Sistema interno de gerenciamento para área financeira desenvolvido para a Credisan. Backoffice completo para administração de cooperados, parceiros e propostas de crédito, incluindo sistema de simulações de crédito para parceiros. Desenvolvimento frontend com integração ao backend C#.",
+      "description": "Desenvolvimento de ecossistema administrativo para a área financeira da Credisan. Implementação de módulos para gestão de cooperados e simulações de crédito complexas, integrando o frontend React a um backend C# resiliente para suporte à tomada de decisão financeira.",
       "image": null,
-      "technologies": ["React", "TypeScript", "Tailwind CSS", "REST API"],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "REST API"
+      ],
       "github": null,
       "demo": null,
       "category": "Trabalho",
@@ -93,7 +134,12 @@
       "title": "Letmeask",
       "description": "Plataforma de perguntas e respostas em tempo real desenvolvida durante o evento NLW Together da Rocketseat. Permite que usuários criem salas de Q&A e interajam através de perguntas e respostas.",
       "image": "/letmeask.png",
-      "technologies": ["React", "TypeScript", "Firebase", "Sass"],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Firebase",
+        "Sass"
+      ],
       "github": null,
       "demo": "https://letmeask-f38c5.web.app/",
       "category": "Estudo",
@@ -104,7 +150,11 @@
       "title": "Devdotfinance",
       "description": "Aplicação web para controle financeiro pessoal desenvolvida com HTML, CSS e JavaScript puro. Permite cadastrar entradas e saídas financeiras com interface moderna e responsiva.",
       "image": "/devdotfinance.png",
-      "technologies": ["HTML5", "CSS3", "JavaScript"],
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ],
       "github": null,
       "demo": "https://devdotfinance.web.app/",
       "category": "Estudo",
@@ -115,7 +165,11 @@
       "title": "Gameplay",
       "description": "Aplicativo mobile desenvolvido em React Native para agendamento de partidas de jogos. Permite que usuários encontrem parceiros para jogar seus jogos favoritos.",
       "image": "/gameplay.png",
-      "technologies": ["React Native", "TypeScript", "Expo"],
+      "technologies": [
+        "React Native",
+        "TypeScript",
+        "Expo"
+      ],
       "github": "https://github.com/teilorbarcelos/gameplay",
       "demo": null,
       "category": "Estudo",
@@ -126,7 +180,12 @@
       "title": "Origin",
       "description": "Website moderno desenvolvido com Next.js apresentando uma landing page responsiva e otimizada. Demonstra habilidades em desenvolvimento front-end com foco em performance e SEO.",
       "image": "/origin.png",
-      "technologies": ["Next.js", "React", "TypeScript", "CSS Modules"],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "CSS Modules"
+      ],
       "github": null,
       "demo": "https://origin-ten.vercel.app/",
       "category": "Estudo",

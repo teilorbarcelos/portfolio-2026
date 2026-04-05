@@ -1,6 +1,8 @@
+import aboutData from '../data/about.json'
 import personalData from '../data/personal.json'
-import { PersonalInfoProps } from '../types'
+import { AboutProps, PersonalInfoProps } from '../types'
 
+const about = aboutData as AboutProps
 const personal = personalData as PersonalInfoProps
 
 export default function About() {
@@ -9,7 +11,7 @@ export default function About() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Sobre Mim
+            {about.title}
           </h2>
           <div className="w-24 h-1 bg-primary-600 mx-auto"></div>
         </div>
@@ -17,12 +19,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              {personal.bio}
-            </p>
-            <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              Sou apaixonado por tecnologia e sempre busco aprender novas ferramentas
-              e metodologias. Acredito que o código limpo e bem estruturado é fundamental
-              para criar soluções escaláveis e de fácil manutenção.
+              {about.trajectory}
             </p>
             <div className="space-y-3">
               <div className="flex items-center text-gray-300">

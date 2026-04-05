@@ -1,3 +1,8 @@
+export interface AboutProps {
+  title: string;
+  trajectory: string;
+}
+
 export interface PersonalInfoProps {
   name: string;
   role: string;

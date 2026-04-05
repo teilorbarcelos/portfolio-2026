@@ -17,7 +17,7 @@ export default function Skills() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {skills.skills.map((category, index) => (
             <div key={index} className="bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border border-gray-700">
               <h3 className="text-2xl font-bold text-white mb-6 text-center">
