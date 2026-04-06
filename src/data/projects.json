@@ -3,7 +3,7 @@
     {
       "id": 5,
       "title": "MLetras Stellare - Portal",
-      "description": "Portal educacional escalável projetado para sustentar picos de 10 mil usuários online simultaneamente. Gerencia fluxos complexos de atividades, simulados e conteúdos multimídia (vídeo, PDF, HTML), proporcionando uma jornada de aprendizado estável e intuitiva para alunos e professores no ecossistema Stellare.",
+      "description": "Desenvolvimento de portal educacional voltado para alto volume de acessos, suportando milhares de usuários simultâneos. Atuei na construção de fluxos complexos de atividades e conteúdos multimídia, garantindo estabilidade, performance e uma experiência consistente para alunos e professores.",
       "image": "/stellare-portal.png",
       "technologies": [
         "React",
@@ -19,7 +19,7 @@
     {
       "id": 6,
       "title": "MLetras Stellare - Backoffice",
-      "description": "Centro de comando administrativo para o ecossistema educacional MLetras Stellare. Permite a gestão granular de milhares de usuários, conteúdos pedagógicos e configurações globais de sistema, compartilhando um backend robusto e de alta disponibilidade com o portal principal.",
+      "description": "Desenvolvimento de backoffice administrativo para gestão de usuários, conteúdos pedagógicos e configurações do ecossistema Stellare. A solução centralizou operações e melhorou a eficiência na administração de um ambiente educacional de grande escala.",
       "image": "/stellare-backoffice.png",
       "technologies": [
         "React",
@@ -35,7 +35,7 @@
     {
       "id": 7,
       "title": "Neodent - Consignado",
-      "description": "Arquitetura e desenvolvimento Full Stack (do zero ao deploy) de um portal para gestão de consignados Straumann/Neodent. Atuando como único responsável técnico, implementei uma solução que automatizou processos manuais de estoque e vendas, garantindo integridade de dados e alta performance operacional.",
+      "description": "Desenvolvimento full stack (do zero ao deploy) de um sistema para gestão de consignados. Automatizei processos manuais de estoque e vendas, aumentando a confiabilidade dos dados e melhorando a eficiência operacional.",
       "image": "/neodent-consignado.png",
       "technologies": [
         "React",
@@ -51,7 +51,7 @@
     {
       "id": 8,
       "title": "Neodent - Backoffice",
-      "description": "Painel administrativo centralizado para o sistema de consignados Neodent. Desenvolvido individualmente para permitir o controle total de operações financeiras, catálogo de produtos e gestão de parceiros, integrando-se via APIs resilientes ao ecossistema da Straumann.",
+      "description": "Desenvolvimento de painel administrativo para controle de operações financeiras, catálogo de produtos e gestão de parceiros. Integrei o sistema a APIs do ecossistema Straumann, garantindo consistência e confiabilidade nas operações.",
       "image": "/neodent-backoffice.png",
       "technologies": [
         "React",
@@ -67,7 +67,7 @@
     {
       "id": 9,
       "title": "Nexo Jornal",
-      "description": "Atuação na modernização técnica do portal Nexo Jornal, participando da migração de um ecossistema legado em React/JavaScript para uma arquitetura em Next.js, TypeScript e GraphQL, integrada ao WordPress como CMS. Contribuí para a remoção de dependência de uma plataforma externa de infraestrutura, permitindo maior autonomia da equipe e simplificando o fluxo de manutenção e deploy. Também participei da integração do “Subscribe with Google”, ampliando as opções de assinatura da plataforma. A nova arquitetura melhorou a organização do código, facilitou a evolução do produto e tornou o ambiente mais sustentável para o time técnico.",
+      "description": "Atuação na modernização técnica do portal Nexo Jornal, participando da migração de um ecossistema legado em React/JavaScript para uma arquitetura em Next.js, TypeScript e GraphQL, integrada ao WordPress como CMS. Contribuí para a remoção da dependência de infraestrutura externa, aumentando a autonomia da equipe e simplificando o fluxo de manutenção e deploy. Também participei da integração do “Subscribe with Google”, ampliando as opções de assinatura da plataforma.",
       "image": "/nexojornal.png",
       "technologies": [
         "Next.js",
@@ -85,7 +85,7 @@
     {
       "id": 10,
       "title": "MedAssist",
-      "description": "Modernização estratégica de infraestrutura, substituindo o backend legado (C#) por uma solução performática em NestJS. Desenvolvi APIs RESTful robustas para servir como camada de orquestração entre backoffice, banco de dados e aplicativos mobile, elevando a manutenibilidade e velocidade de resposta do sistema.",
+      "description": "Modernização de backend legado em C# para uma arquitetura em NestJS. Desenvolvi APIs REST responsáveis pela integração entre sistemas internos e aplicativos mobile, melhorando a manutenibilidade e a performance das operações.",
       "image": null,
       "technologies": [
         "NestJS",
@@ -101,7 +101,7 @@
     {
       "id": 11,
       "title": "Whirlpool - Food Hall Backoffice",
-      "description": "Expansão de funcionalidades e manutenção crítica do backoffice interno da Whirlpool (Food Hall). Foco na otimização de fluxos operacionais e gestão de estabelecimentos, garantindo eficiência na administração de processos internos complexos.",
+      "description": "Manutenção e evolução de backoffice interno da Whirlpool, com foco na otimização de fluxos operacionais e gestão de estabelecimentos. Contribuí para maior eficiência na administração de processos internos.",
       "image": null,
       "technologies": [
         "React",
@@ -116,7 +116,7 @@
     {
       "id": 12,
       "title": "Credisan - Backoffice",
-      "description": "Desenvolvimento de ecossistema administrativo para a área financeira da Credisan. Implementação de módulos para gestão de cooperados e simulações de crédito complexas, integrando o frontend React a um backend C# resiliente para suporte à tomada de decisão financeira.",
+      "description": "Desenvolvimento de sistema administrativo para o setor financeiro, com módulos de gestão de cooperados e simulação de crédito. Integração entre frontend em React e backend em C#, apoiando processos de tomada de decisão.",
       "image": null,
       "technologies": [
         "React",
@@ -132,7 +132,7 @@
     {
       "id": 1,
       "title": "Letmeask",
-      "description": "Plataforma de perguntas e respostas em tempo real desenvolvida durante o evento NLW Together da Rocketseat. Permite que usuários criem salas de Q&A e interajam através de perguntas e respostas.",
+      "description": "Plataforma de perguntas e respostas em tempo real desenvolvida com React e Firebase. Permite criação de salas interativas, demonstrando conceitos de realtime e gerenciamento de estado.",
       "image": "/letmeask.png",
       "technologies": [
         "React",
@@ -148,7 +148,7 @@
     {
       "id": 2,
       "title": "Devdotfinance",
-      "description": "Aplicação web para controle financeiro pessoal desenvolvida com HTML, CSS e JavaScript puro. Permite cadastrar entradas e saídas financeiras com interface moderna e responsiva.",
+      "description": "Aplicação web para controle financeiro pessoal com cadastro de entradas e saídas. Projeto focado em manipulação de estado e construção de interfaces responsivas com JavaScript puro.",
       "image": "/devdotfinance.png",
       "technologies": [
         "HTML5",
@@ -163,7 +163,7 @@
     {
       "id": 3,
       "title": "Gameplay",
-      "description": "Aplicativo mobile desenvolvido em React Native para agendamento de partidas de jogos. Permite que usuários encontrem parceiros para jogar seus jogos favoritos.",
+      "description": "Aplicativo mobile desenvolvido em React Native para organização de partidas entre jogadores. Explora integração com APIs e conceitos de navegação e estado em aplicações mobile.",
       "image": "/gameplay.png",
       "technologies": [
         "React Native",
@@ -178,7 +178,7 @@
     {
       "id": 4,
       "title": "Origin",
-      "description": "Website moderno desenvolvido com Next.js apresentando uma landing page responsiva e otimizada. Demonstra habilidades em desenvolvimento front-end com foco em performance e SEO.",
+      "description": "Landing page desenvolvida com Next.js com foco em performance, SEO e responsividade. Demonstra boas práticas de estruturação de frontend moderno.",
       "image": "/origin.png",
       "technologies": [
         "Next.js",
