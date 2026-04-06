@@ -67,7 +67,7 @@
     {
       "id": 9,
       "title": "Nexo Jornal",
-      "description": "Atuação no desenvolvimento e modernização técnica do portal Nexo Jornal. Participei ativamente da transição de um ecossistema legado em React/JS gerenciado por plataformas estrangeiras, para uma arquitetura robusta em Next.js com TypeScript e GraphQL, integrando-se ao WordPress como CMS central. A solução elevou a manutenibilidade, performance e autonomia editorial e técnica, integrando ferramentas cruciais como 'Subscribe with Google'.",
+      "description": "Atuação na modernização técnica do portal Nexo Jornal, participando da migração de um ecossistema legado em React/JavaScript para uma arquitetura em Next.js, TypeScript e GraphQL, integrada ao WordPress como CMS. Contribuí para a remoção de dependência de uma plataforma externa de infraestrutura, permitindo maior autonomia da equipe e simplificando o fluxo de manutenção e deploy. Também participei da integração do “Subscribe with Google”, ampliando as opções de assinatura da plataforma. A nova arquitetura melhorou a organização do código, facilitou a evolução do produto e tornou o ambiente mais sustentável para o time técnico.",
       "image": "/nexojornal.png",
       "technologies": [
         "Next.js",
