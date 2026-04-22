@@ -11,12 +11,13 @@ export interface PersonalInfoProps {
   phone: string | null;
   location: string;
   avatar: string;
-  social: {
-    github?: string;
-    linkedin?: string;
-    twitter?: string;
-    instagram?: string;
-  };
+    social: {
+      github?: string;
+      linkedin?: string;
+      npm?: string;
+      twitter?: string;
+      instagram?: string;
+    };
 }
 
 export interface ProjectProps {

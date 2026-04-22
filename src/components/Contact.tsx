@@ -156,6 +156,19 @@ export default function Contact() {
                     </svg>
                   </a>
                 )}
+                {personal.social.npm && (
+                  <a
+                    href={personal.social.npm}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-300 hover:bg-primary-600 hover:text-white transition-colors border border-gray-700"
+                    aria-label="NPM"
+                  >
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M1.763 0C.786 0 0 .786 0 1.763v20.474C0 23.214.786 24 1.763 24h20.474c.977 0 1.763-.786 1.763-1.763V1.763C24 .786 23.214 0 22.237 0H1.763zM5.13 5.323l13.837.019-.009 13.336h-3.477v-10.12h-3.447v10.12H5.13V5.323z" />
+                    </svg>
+                  </a>
+                )}
                 {personal.social.twitter && (
                   <a
                     href={personal.social.twitter}
