@@ -28,6 +28,7 @@ export interface ProjectProps {
   technologies: string[];
   github?: string | null;
   demo?: string | null;
+  npm?: string | null;
   category: string;
   period?: string;
 }

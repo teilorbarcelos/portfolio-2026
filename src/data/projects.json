@@ -1,6 +1,58 @@
 {
   "projects": [
     {
+      "id": 15,
+      "title": "Mage CLI ⚡",
+      "description": "CLI avançada para automação e geração de código orientada a padrões e inteligência artificial. O Mage atua como um agente autônomo no terminal, capaz de decidir entre aplicar padrões pré-definidos ou gerar soluções customizadas via IA (Gemini/OpenAI), além de propor e executar comandos de sistema para acelerar o workflow de desenvolvimento.",
+      "image": null,
+      "technologies": [
+        "Node.js",
+        "TypeScript",
+        "AI (Gemini/OpenAI)",
+        "Commander",
+        "Handlebars"
+      ],
+      "github": "https://github.com/teilorbarcelos/mage-cli",
+      "demo": null,
+      "npm": "https://www.npmjs.com/package/mage-cli",
+      "category": "Open Source",
+      "period": "Dez 2025 - Momento"
+    },
+    {
+      "id": 14,
+      "title": "Mage React Cam",
+      "description": "Biblioteca React para captura de vídeo e fotos que abstrai a complexidade da API MediaDevices. Oferece controle simplificado sobre streaming, snapshots, zoom e troca de câmera (facing mode), garantindo uma integração fluida e de alta performance para funcionalidades de câmera em aplicações web.",
+      "image": "/mage-react-cam.png",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "MediaDevices API"
+      ],
+      "github": "https://github.com/teilorbarcelos/mage-react-cam",
+      "demo": "https://teilorbarcelos.github.io/mage-react-cam-demo/",
+      "npm": "https://www.npmjs.com/package/mage-react-cam",
+      "category": "Open Source",
+      "period": "Ago 2024"
+    },
+    {
+      "id": 13,
+      "title": "Mage Select Engine 🧙‍♂️",
+      "description": "Motor de busca e seleção de dados de alto desempenho que resolve problemas crônicos de escalabilidade em aplicações web. Através de Infinite Scrolling dinâmico e Auto-Hydration, ele elimina o 'Client-Side Exhaustion' e a latência de backend, permitindo lidar com catálogos massivos de dados sem comprometer a performance ou a experiência do usuário.",
+      "image": "/mage-select-data-engine.png",
+      "technologies": [
+        "TypeScript",
+        "React",
+        "React Hook Form",
+        "Node.js",
+        "Prisma"
+      ],
+      "github": "https://github.com/teilorbarcelos/mage-select-data-engine-workspace",
+      "demo": "https://teilorbarcelos.github.io/mage-select-data-engine-demo/",
+      "npm": "https://www.npmjs.com/package/mage-select-data-engine",
+      "category": "Open Source",
+      "period": "Nov 2025 - Momento"
+    },
+    {
       "id": 5,
       "title": "MLetras Stellare - Portal",
       "description": "Desenvolvimento de portal educacional voltado para alto volume de acessos, suportando milhares de usuários simultâneos. Atuei na construção de fluxos complexos de atividades e conteúdos multimídia, garantindo estabilidade, performance e uma experiência consistente para alunos e professores.",

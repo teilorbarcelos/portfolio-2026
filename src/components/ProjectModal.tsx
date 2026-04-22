@@ -107,6 +107,19 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                   </svg>
                 </a>
               )}
+              {project.npm && (
+                <a 
+                  href={project.npm}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-secondary w-full mt-4 flex items-center justify-center gap-2 border-red-500/50 hover:bg-red-500/10 hover:border-red-500 text-red-400"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M1.763 0C.786 0 0 .786 0 1.763v20.474C0 23.214.786 24 1.763 24h20.474c.977 0 1.763-.786 1.763-1.763V1.763C24 .786 23.214 0 22.237 0H1.763zM5.13 5.323l13.837.019-.009 13.336h-3.477v-10.12h-3.447v10.12H5.13V5.323z" />
+                  </svg>
+                  Ver no NPM
+                </a>
+              )}
               {project.github && (
                 <a 
                   href={project.github}
