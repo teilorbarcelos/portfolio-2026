@@ -10,7 +10,7 @@ export default function Projects() {
   const [selectedProject, setSelectedProject] = useState<ProjectProps | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
-  const categories = ['Todos', 'Estudo', 'Trabalho']
+  const categories = ['Todos', 'Estudo', 'Trabalho', 'Open Source']
 
   const filteredProjects = filter === 'Todos'
     ? projects.projects
@@ -82,7 +82,11 @@ export default function Projects() {
                 </div>
                 <div className="absolute top-4 left-4 flex gap-2">
                   <span className={`text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded bg-gray-900/80 backdrop-blur-sm border ${
-                    project.category === 'Estudo' ? 'text-primary-400 border-primary-400/30' : 'text-green-400 border-green-400/30'
+                    project.category === 'Estudo' 
+                      ? 'text-primary-400 border-primary-400/30' 
+                      : project.category === 'Open Source'
+                        ? 'text-purple-400 border-purple-400/30'
+                        : 'text-green-400 border-green-400/30'
                   }`}>
                     {project.category}
                   </span>
@@ -132,19 +136,34 @@ export default function Projects() {
                     </svg>
                   </button>
                   
-                  {project.demo && (
-                    <a 
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 bg-gray-700 hover:bg-primary-600 text-white rounded-lg transition-all duration-200"
-                      title="Acessar Projeto"
-                    >
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
-                    </a>
-                  )}
+                  <div className="flex gap-2">
+                    {project.npm && (
+                      <a 
+                        href={project.npm}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-gray-700 hover:bg-red-600 text-white rounded-lg transition-all duration-200"
+                        title="Ver no NPM"
+                      >
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M1.763 0C.786 0 0 .786 0 1.763v20.474C0 23.214.786 24 1.763 24h20.474c.977 0 1.763-.786 1.763-1.763V1.763C24 .786 23.214 0 22.237 0H1.763zM5.13 5.323l13.837.019-.009 13.336h-3.477v-10.12h-3.447v10.12H5.13V5.323z" />
+                        </svg>
+                      </a>
+                    )}
+                    {project.demo && (
+                      <a 
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-gray-700 hover:bg-primary-600 text-white rounded-lg transition-all duration-200"
+                        title="Acessar Projeto"
+                      >
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
